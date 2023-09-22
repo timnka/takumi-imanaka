@@ -25,7 +25,7 @@ const ExperienceBadge: React.FC<IExperience> = ({ role, company, abstract, timel
                         </svg>
                     </div>
 
-                    <h2 className='italic text-lg ease-in-out duration-500 group group-hover:text-pink-500'>{abstract}</h2>
+                    <h2 className='italic text-lg ease-in-out duration-500 group group-hover:text-blue-500'>{abstract}</h2>
                     <h3>{timeline}</h3>
                     <p className='pt-5'>{description}</p>
                     <div className='flex flex-wrap mt-4'>
