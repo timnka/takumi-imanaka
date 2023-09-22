@@ -5,13 +5,13 @@ import { experience } from './READexperience'
 import ProjectBadge from './ProjectBadge'
 export default function Home() {
   return (
-    <main className='w-full flex flex-col lg:flex-row px-8 lg:px-0 bg-gray-200 text-gray-600'>
+    <main className='w-full flex flex-col lg:flex-row px-8 lg:px-0 bg-gray-300 text-gray-600'>
       { /* Profile */}
       <div className='lg:sticky lg:top-0 w-full lg:w-1/2 lg:max-h-screen flex flex-col items-center'>
         <div className='flex flex-col'>
           <div className='pt-48'>
             <h1 className='text-5xl font-bold text-blue-800'>Takumi Imanaka</h1>
-            <h2 className='text-3xl font-bold text-pink-500 pt-2'>Software Engineer</h2>
+            <h2 className='text-3xl font-bold text-blue-500 pt-2'>Software Engineer</h2>
             <h3 className='text-2xl text-gray-500 pt-4'>An energetic, self starting, and ambitious engineer.</h3>
 
             {/* Socials Links */}
@@ -38,7 +38,7 @@ export default function Home() {
               {/* ABOUT Link */}
               <Link href='#about' className='flex py-2 group max-w-fit'>
                 <div className='flex items-center'>
-                  <div className='border-t-2 border-gray-500 w-8 ease-in-out duration-300 group-hover:w-16 group-hover:border-pink-500 group-hover:cursor-pointer'></div>
+                  <div className='border-t-2 border-gray-500 w-8 ease-in-out duration-300 group-hover:w-16 group-hover:border-blue-500 group-hover:cursor-pointer'></div>
                 </div>
                 <h1 className='pl-3 group-hover:cursor-pointer'>about</h1>
               </Link>
@@ -46,7 +46,7 @@ export default function Home() {
               {/* EXPERIENCE Link */}
               <Link href='#experience' className='flex py-2 group max-w-fit'>
                 <div className='flex items-center'>
-                  <div className='border-t-2 border-gray-500 w-8 ease-in-out duration-300 group-hover:w-16 group-hover:border-pink-500 group-hover:cursor-pointer'></div>
+                  <div className='border-t-2 border-gray-500 w-8 ease-in-out duration-300 group-hover:w-16 group-hover:border-blue-500 group-hover:cursor-pointer'></div>
                 </div>
                 <h1 className='pl-3 group-hover:cursor-pointer'>experience</h1>
               </Link>
@@ -54,7 +54,7 @@ export default function Home() {
               {/* projects Link */}
               <Link href='#projects' className='flex py-2 group max-w-fit'>
                 <div className='flex items-center'>
-                  <div className='border-t-2 border-gray-500 w-8 ease-in-out duration-300 group-hover:w-16 group-hover:border-pink-500 group-hover:cursor-pointer'></div>
+                  <div className='border-t-2 border-gray-500 w-8 ease-in-out duration-300 group-hover:w-16 group-hover:border-blue-500 group-hover:cursor-pointer'></div>
                 </div>
                 <h1 className='pl-3 group-hover:cursor-pointer'>projects</h1>
               </Link>
@@ -64,9 +64,9 @@ export default function Home() {
       </div>
 
       {/* Content */}
-      <div className='lg:w-1/2 bg-gray-200 lg:pr-36 lg:h-full flex flex-col'>
+      <div className='lg:w-1/2 bg-gray-300 lg:pr-36 lg:h-full flex flex-col'>
 
-        <h1 id='about' className='text-3xl text-pink-500 font-bold pt-48 '>About.</h1>
+        <h1 id='about' className='text-3xl text-blue-500 font-bold pt-48 '>About.</h1>
         <div>
           {/* About  */}
           <div  className='text-lg px-5 py-16 flex flex-col'>
@@ -77,7 +77,7 @@ export default function Home() {
 
           {/* Experience Component */}
           <div id='experience'>
-            <h1 className='text-3xl text-pink-500 font-bold'>Experience.</h1>
+            <h1 className='text-3xl text-blue-500 font-bold'>Experience.</h1>
             {
               experience.map((curr) => {
                 return (
@@ -96,7 +96,7 @@ export default function Home() {
           </div>
 
           <div id='projects'>
-            <h1 className='text-3xl text-pink-500 font-bold'>Projects.</h1>
+            <h1 className='text-3xl text-blue-500 font-bold'>Projects.</h1>
             <ProjectBadge
               name='ClickClack'
               description='ClickClack is a web app that allows users to measure their typing speeds. It is built using React and Javascript on the front-end, where users are timed on a 30 second interval to type as many words as they  can, as fast as they can. After the timer is up, the user input is sent to a Node.js server to compute the average words per minute typed, as well as the user’s accuracy.'
